@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        
+        .wrapper {
+            margin: 0 auto;
+            width: 800px;
+            height: 500px;
+            background-color: antiquewhite;
+        }
+        
+        .menu {
+            display: flex;
+            justify-content: right;
+            column-gap: 10px;
+            margin-top: 20px;
+        }
+        
+        .menu>li {
+            height: 50px;
+            width: 100px;
+            background-color: aquamarine;
+            border: 1px solid royalblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .menu>li:nth-child(5) {
+            flex-wrap: wrap;
+            transform: rotate(30deg);
+        }
+        
+        .menu>li:nth-child(5) input {
+            width: 100%;
+        }
+        
+        .menu a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        .menu li:hover {
+            background-color: seashell;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <ul class="menu">
+            <li><a href="">Item 1</a></li>
+            <li><a href="">Item 2</a></li>
+            <li><a href="">Item 3</a></li>
+            <li><a href="">Item 4</a></li>
+            <li><a href="">Item 5</a>
+                <input type="text" maxlength="10">
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
